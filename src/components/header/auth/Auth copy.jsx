@@ -30,12 +30,12 @@ export class Auth extends React.Component {
     }
     Login = () => {
         this.setState({ isAuth: true });
-        localStorage.setItem('isAuth', 'true'); 
+        localStorage.setItem('isAuth', 'true');
         localStorage.setItem('userName', this.state.userName);
     }
     LogOut = () => {
-        this.setState({ isAuth: false, modalIsOpen:false});
-        localStorage.setItem('isAuth', 'false'); 
+        this.setState({ isAuth: false, modalIsOpen: false });
+        localStorage.setItem('isAuth', 'false');
         localStorage.clear();
     }
     openEditMode = () => {
@@ -46,8 +46,8 @@ export class Auth extends React.Component {
         this.setState({ editMode: false });
         localStorage.setItem('userName', this.state.userName);
     }
-    openModal =() => {
-        this.setState({modalIsOpen:true});
+    openModal = () => {
+        this.setState({ modalIsOpen: true });
     }
     closeModal = () => {
         this.setState({ modalIsOpen: false });
@@ -55,32 +55,32 @@ export class Auth extends React.Component {
     render() {
         if (this.state.isAuth) {
             if (this.state.editMode) {
-                return (<div><input value={this.state.userName} onChange={this.onNameCgange} onBlur={this.closeEditMode} placeholder="Логин" className="user-name" autoFocus/><button className="search-btn btn" onClick={this.LogOut}>Выйти</button> </div>)
+                return (<div><input value={this.state.userName} onChange={this.onNameCgange} onBlur={this.closeEditMode} placeholder="Логин" className="user-name" autoFocus /><button className="search-btn btn" onClick={this.LogOut}>Выйти</button> </div>)
             }
             else {
                 return (<div><span onClick={this.openEditMode}>{this.state.userName}</span> <button className="search-btn btn" onClick={this.LogOut}>Выйти</button></div>)
             }
-        }     
+        }
         else
-        return (
-            <div>
-                <button className="login-btn btn" onClick={this.openModal}>Войти</button>
-                <Modal
-                    isOpen={this.state.modalIsOpen}
-                    onRequestClose={this.closeModal}
-                    style={customStyles}
-                    contentLabel="Login Modal">
-                    <div className="modal-window">
-                        <h2>Вход</h2>
-                        <form onSubmit={this.Login}>
-                            <input type="text" placeholder="Логин" required value={this.state.userName} onChange={this.onNameCgange}/><br />
-                            <input type="password" placeholder="Пароль" required /><br />
-                            <input type="checkbox" /> Запомнить<br />
-                            <button className="login-btn btn" type="submit">Войти</button>
-                        </form>
-                    </div>
-                </Modal>
-            </div>
-        )
+            return (
+                <div>
+                    <button className="login-btn btn" onClick={this.openModal}>Войти</button>
+                    <Modal
+                        isOpen={this.state.modalIsOpen}
+                        onRequestClose={this.closeModal}
+                        style={customStyles}
+                        contentLabel="Login Modal">
+                        <div className="modal-window">
+                            <h2>Вход</h2>
+                            <form onSubmit={this.Login}>
+                                <input type="text" placeholder="Логин" required value={this.state.userName} onChange={this.onNameCgange} /><br />
+                                <input type="password" placeholder="Пароль" required /><br />
+                                <input type="checkbox" />Запомнить<br />
+                                <button className="login-btn btn" type="submit">Войти</button>
+                            </form>
+                        </div>
+                    </Modal>
+                </div>
+            )
     }
 }

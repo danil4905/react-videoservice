@@ -4,7 +4,7 @@ export const ChannelItem = (props) => {
     return (
         <div className="channelItem">
             <div className="channelItem-logo">
-                <img src={props.img} alt="#"/>
+                <img src={props.img} alt="#" />
             </div>
             <div className="channelItem-timetable">
                 <h3>{props.title}</h3>
@@ -13,6 +13,6 @@ export const ChannelItem = (props) => {
                 15:00   {props.third}
                 </p>
             </div>
-        </div>  
+        </div>
     )
 };

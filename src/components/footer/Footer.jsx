@@ -6,7 +6,7 @@ const Footer = (props) => {
             <div className="container">
                 <div className="footer-wrapper">
                     <div>
-                    <img src="https://psv4.userapi.com/c856336/u99821886/docs/d3/52b62ff30726/logo-footer.png?extra=2EtQLKx09YBcOU3M2npEp1te_TTy3t4DRMtqG0mSSvV0hBk7Tg7ebD7F4igRcF8xfex_mM9uVBgkeMba7OzMlQIGDAaIiFmGX0uaInv8ExOaTP6TI1QG-Le-bvvZFj8NXVvQesn-y6rb0eCJMD6Y0Q" alt="#" />
+                        <img src="https://psv4.userapi.com/c856336/u99821886/docs/d3/52b62ff30726/logo-footer.png?extra=2EtQLKx09YBcOU3M2npEp1te_TTy3t4DRMtqG0mSSvV0hBk7Tg7ebD7F4igRcF8xfex_mM9uVBgkeMba7OzMlQIGDAaIiFmGX0uaInv8ExOaTP6TI1QG-Le-bvvZFj8NXVvQesn-y6rb0eCJMD6Y0Q" alt="#" />
                     </div>
                     <div>
                         426057, Россия, Удмуртская Республика, г. Ижевск, ул. Карла Маркса, 246 (ДК «Металлург») <br />

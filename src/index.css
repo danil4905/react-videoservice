@@ -135,6 +135,8 @@ input {
   font-size: 16px;
   line-height: 140%;
   height: 338px;
+  width: 250px;
+
   border-radius: 8px;
   color: #F2F2F2;
   transition: 0.15s;
@@ -246,11 +248,10 @@ footer {
 .modal-window {
   width: 306px;
   height: 394px;
-  text-align: center;
   font-weight: normal;
   font-size: 16px;
   border-radius: 8px;
-
+  text-align: center;
 }
 
 .modal-window input {
@@ -267,6 +268,7 @@ footer {
 
 .modal-window h2 {
   margin-top: 36px;
+  text-align: center;
   margin-bottom: 25px;
   font-weight: 500;
   font-size: 28px;
@@ -282,4 +284,96 @@ footer {
 .site-link {
   text-decoration: none;
   color: #1F4766;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .container {
+    width: 960px;
+  }
+
+  .films-items,
+  .genres-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: -55px;
+    grid-row-gap: 25px;
+  }
+
+  .genre-item,
+  .movieItem {
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 640px) and (max-width: 767px) {
+  .container {
+    width: 95%;
+  }
+
+  .films-items,
+  .genres-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 25px;
+  }
+
+  .genre-item,
+  .movieItem {
+    margin: 0 auto;
+  }
+
+  .header-wrapper {
+    display: block;
+    margin-bottom: 48px;
+  }
+
+  .login-btn {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 639px) {
+
+  .films-items,
+  .genres-items {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  .header-wrapper {
+    display: block;
+    margin-bottom: 48px;
+  }
+
+  .genre-item,
+  .movieItem {
+    margin: 25px auto;
+  }
+
+  .TVchannel-wrapper {
+    display: block;
+  }
+
+  .channelItem {
+    display: block;
+    text-align: center;
+  }
+
+  .channelItem-logo {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .search-wrapper input {
+    width: 175px;
+    margin: 20px;
+  }
+
+  .login-btn {
+    margin-left: 15px;
+  }
 }

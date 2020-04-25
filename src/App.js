@@ -12,18 +12,17 @@ function App(props) {
       <div className="App">
         <Header />
         <Navbar />
-          <Switch>
-            <Route path="/" exact>
-              <Films state={props.state} />
-            </Route>
-            <Route path="/channel" exact>
-              <TVchannel state={props.state} />
-            </Route>
-          </Switch>
-        </div>
-        <Footer />
+        <Switch>
+          <Route path="/" exact>
+            <Films state={props.state} />
+          </Route>
+          <Route path="/channel" exact>
+            <TVchannel state={props.state} />
+          </Route>
+        </Switch>
+      </div>
+      <Footer />
     </BrowserRouter>
   );
 }
-
 export default App;

@@ -1,5 +1,5 @@
 import React from 'react';
-import {MovieItem} from "../movie-item/MovieItem";
+import { MovieItem } from "../movie-item/MovieItem";
 
 const News = (props) => {
     let filmsItems = props.state.films.map(m => <MovieItem key={m.id} title={m.title} img={m.img} about={m.about} />);
