@@ -1,0 +1,285 @@
+body {
+  margin: 0;
+  font-family: 'Rubik',
+    sans-serif;
+  padding-top: 32px;
+  color: #333;
+}
+
+input,
+button {
+  outline: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo p {
+  margin-top: 5px;
+  margin-left: 12px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid #333333;
+  width: 232px;
+}
+
+.search-wrapper input {
+  width: 320px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #333;
+}
+
+.search-btn {
+  border: none;
+  color: #E5261E;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.login-btn {
+  background: #E5261E;
+  border-radius: 4px;
+  border: none;
+  width: 113px;
+  height: 38px;
+  font-weight: 500;
+  margin-top: -5px;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #FFFFFF;
+  transition: 0.15s;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background: #CC221B;
+}
+
+.navbar-wrapper {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.navbar-wrapper .navlink {
+  text-decoration: none;
+  color: #333;
+  margin: 12px;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+}
+
+.news-wrapper h2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.navbar-wrapper .selected {
+  color: #E5261E;
+  border-bottom: 2px #E5261E solid;
+}
+
+.films-items,
+.genres-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.movieItem {
+  position: relative;
+}
+
+.movieItem p {
+  max-width: 280px;
+  font-size: 20px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.movieItem img {
+  border-radius: 6px;
+}
+
+.movieItem .movie-about {
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+  padding: 16px;
+  opacity: 0;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  height: 338px;
+  border-radius: 8px;
+  color: #F2F2F2;
+  transition: 0.15s;
+}
+
+.movieItem .movie-about:hover {
+  opacity: 1;
+  background: rgba(51, 51, 51, 0.8);
+}
+
+.genre-item {
+  text-align: center;
+  width: 280px;
+  height: 208px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0.8;
+  box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
+  background-color: #eeee;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.15s;
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: normal;
+}
+
+.genre-item span {
+  font-size: 48px;
+  line-height: 57px;
+}
+
+.genre-item:hover {
+  opacity: 1;
+}
+
+.genre-item.comedy {
+  background: linear-gradient(136.27deg, #F2C94C 8.44%, #F29A4A 91.36%);
+}
+
+.genre-item.dram {
+  background: linear-gradient(136.27deg, #F2994A 8.44%, #EB5757 91.36%);
+}
+
+.genre-item.fantasy {
+  background: linear-gradient(136.27deg, #56CCF2 8.44%, #2F80ED 91.36%);
+}
+
+.genre-item.horror {
+  background: linear-gradient(136.27deg, #828282 8.44%, #333333 91.36%);
+}
+
+.channelItem {
+  display: flex;
+  background: #F2F2F2;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  color: #333333;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  min-height: 162px;
+}
+
+.channelItem-timetable-red {
+  color: #E5261E;
+}
+
+.channelItem-timetable h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.channelItem-logo {
+  width: 400px;
+  text-align: center;
+}
+
+.channelItem-logo img {
+  margin-top: 47px;
+}
+
+footer {
+  background-color: #F2F2F2;
+  margin-top: 70px;
+  color: #333333;
+}
+
+.footer-wrapper {
+  display: flex;
+  padding: 25px;
+}
+
+.footer-tel {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #333333;
+}
+
+.footer-wrapper img {
+  margin-right: 40px;
+}
+
+.modal-window {
+  width: 306px;
+  height: 394px;
+  text-align: center;
+  font-weight: normal;
+  font-size: 16px;
+  border-radius: 8px;
+
+}
+
+.modal-window input {
+  margin-bottom: 25px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #828282;
+}
+
+.modal-window button {
+  margin-top: 100px;
+}
+
+.modal-window h2 {
+  margin-top: 36px;
+  margin-bottom: 25px;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+}
+
+.user-name {
+  width: 100px;
+  font-size: 16px;
+  margin-left: -49px;
+}
+
+.site-link {
+  text-decoration: none;
+  color: #1F4766;
+}
