@@ -251,15 +251,30 @@ footer {
   font-weight: normal;
   font-size: 16px;
   border-radius: 8px;
-  text-align: center;
 }
 
 .modal-window input {
+
   margin-bottom: 25px;
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
   color: #828282;
+}
+.checkbox-item {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #333333;
+box-sizing: border-box;
+border-radius: 4px;
+  margin-left: -130px;
+  color: #fff;
+}
+.checkbox-text {
+  margin-top: -30px;
+}
+form {
+  text-align: center;
 }
 
 .modal-window button {
@@ -330,6 +345,14 @@ footer {
   .login-btn {
     margin-top: 20px;
   }
+  .channelItem-logo {
+    width: 40%;
+    margin-right: -80px;
+  }
+  .channelItem-logo img {
+    display: block;
+    margin-left: 45px;
+  }
 }
 
 @media only screen and (max-width: 639px) {
@@ -342,6 +365,10 @@ footer {
 
   .container {
     width: 95%;
+  }
+  .modal-window {
+    width: 250px;
+    height: 340px;
   }
 
   .header-wrapper {

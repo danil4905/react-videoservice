@@ -75,7 +75,7 @@ export class Auth extends React.Component {
                             <form onSubmit={this.Login}>
                                 <input type="text" placeholder="Логин" required value={this.state.userName} onChange={this.onNameCgange} /><br />
                                 <input type="password" placeholder="Пароль" required /><br />
-                                <input type="checkbox" />Запомнить<br />
+                                <input type="checkbox"  className="checkbox-item"/><span className="checkbox-text">Запомнить</span><br />
                                 <button className="login-btn btn" type="submit">Войти</button>
                             </form>
                         </div>
