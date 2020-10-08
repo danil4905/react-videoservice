@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-videoservice/static/css/main.ae0308a3.chunk.css",
+    "main.js": "/react-videoservice/static/js/main.001f7c01.chunk.js",
+    "main.js.map": "/react-videoservice/static/js/main.001f7c01.chunk.js.map",
+    "runtime-main.js": "/react-videoservice/static/js/runtime-main.65481a89.js",
+    "runtime-main.js.map": "/react-videoservice/static/js/runtime-main.65481a89.js.map",
+    "static/js/2.8eb05312.chunk.js": "/react-videoservice/static/js/2.8eb05312.chunk.js",
+    "static/js/2.8eb05312.chunk.js.map": "/react-videoservice/static/js/2.8eb05312.chunk.js.map",
+    "index.html": "/react-videoservice/index.html",
+    "precache-manifest.57d72b67197692ace2103ab299d10d2e.js": "/react-videoservice/precache-manifest.57d72b67197692ace2103ab299d10d2e.js",
+    "service-worker.js": "/react-videoservice/service-worker.js",
+    "static/css/main.ae0308a3.chunk.css.map": "/react-videoservice/static/css/main.ae0308a3.chunk.css.map",
+    "static/js/2.8eb05312.chunk.js.LICENSE.txt": "/react-videoservice/static/js/2.8eb05312.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.65481a89.js",
+    "static/js/2.8eb05312.chunk.js",
+    "static/css/main.ae0308a3.chunk.css",
+    "static/js/main.001f7c01.chunk.js"
+  ]
+}
