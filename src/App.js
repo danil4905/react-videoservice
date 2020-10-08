@@ -14,10 +14,11 @@ function App(props) {
         <Header />
         <Navbar />
         <AnimatedSwitch
-          atEnter={{ opacity: 0 }}
-          atLeave={{ opacity: 0 }}
+          atEnter={{ opacity: 0.3 }}
+          atLeave={{ opacity: 0.02 }}
           atActive={{ opacity: 1 }}
-          className="switch-wrapper"
+          runOnMount={true}
+          className="route-wrapper"
         >
           <Route path="/" exact>
             <Films state={props.state} />

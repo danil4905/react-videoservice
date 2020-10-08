@@ -3,7 +3,8 @@ import Modal from 'react-modal';
 
 const customStyles = {
     overlay: {
-        background: 'rgba(51, 51, 51, 0.6)',
+        background: 'rgba(51, 51, 51, 0.7)',
+        position: 'fixed',
     },
     content: {
         top: '50%',
@@ -12,6 +13,8 @@ const customStyles = {
         bottom: 'auto',
         marginRight: '-50%',
         transform: 'translate(-50%, -50%)',
+        WebkitOverflowScrolling: 'none',
+
     },
 };
 
@@ -75,7 +78,7 @@ export class Auth extends React.Component {
                             <form onSubmit={this.Login}>
                                 <input type="text" placeholder="Логин" required value={this.state.userName} onChange={this.onNameCgange} /><br />
                                 <input type="password" placeholder="Пароль" required /><br />
-                                <input type="checkbox"  className="checkbox-item"/><span className="checkbox-text">Запомнить</span><br />
+                                <input type="checkbox" className="checkbox-item" id="checkbox_1" /> <label for="checkbox_1" className="checkbox-text">Запомнить</label> <br />
                                 <button className="login-btn btn" type="submit">Войти</button>
                             </form>
                         </div>

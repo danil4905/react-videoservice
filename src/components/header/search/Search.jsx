@@ -3,7 +3,8 @@ import React from 'react'
 const Search = (props) => {
     return (
         <div className="search-wrapper">
-            <input type="text" placeholder="Поиск..." /> <button className="search-btn btn">Найти</button>
+            <input type="text" className="search-input" placeholder="Поиск..." /> 
+            <button className="search-btn btn">Найти</button>
         </div>
     )
 };
